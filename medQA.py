@@ -16,14 +16,14 @@ os.environ['LANGCHAIN_API_KEY'] = os.getenv("LANGCHAIN_API_KEY")
 os.environ['COHERE_API_KEY'] = os.getenv("COHERE_API_KEY")
 
 
-loader = TextLoader("Anatomy_Gray.txt")
+loader = TextLoader("combined_output.txt")
 docs = loader.load()
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 chunked = splitter.split_documents(docs)
-db = FAISS.from_documents(chunked, HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2"))  # Example model
+db = FAISS.from_documents(chunked, HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")) 
 
 llm = HuggingFaceEndpoint(
-    repo_id="mistralai/Mistral-7B-v0.1",
+    repo_id="meta-llama/Meta-Llama-3-8B-Instruct",
     task="text-generation",
     max_new_tokens=300,
     do_sample=True,
