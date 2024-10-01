@@ -13,7 +13,7 @@ load_dotenv('/Users/harshitsamrat/Documents/python/Anveshak/.env')
 os.environ['HUGGINGFACEHUB_API_TOKEN'] = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 os.environ['LANGCHAIN_TRACING_V2'] = "true"
 os.environ['LANGCHAIN_API_KEY'] = os.getenv("LANGCHAIN_API_KEY")
-os.environ['COHERE_API_KEY'] = os.getenv("COHERE_API_KEY")
+
 
 
 loader = TextLoader("combined_output.txt")
@@ -40,7 +40,7 @@ qa_chain = RetrievalQA.from_chain_type(
 def get_chatbot_response(user_input):
     prompt = f"""Human: {user_input}
 
-Assistant: I will provide a helpful, detailed, and accurate response based on the content of the "antomy-gray" paper. I'll break down the answer step-by-step when appropriate.
+Assistant: I will provide a helpful, detailed, and accurate response based on the content of the "medical-data" paper. I'll break down the answer step-by-step when appropriate.
 
 """
     
