@@ -5,7 +5,7 @@ This project is a sophisticated AI-powered chatbot designed for intelligent docu
 ## Features
 
 -**Text File Analysis**: I processed and analyzed text files (like medical textbooks) using advanced NLP techniques.
--*8Intelligent Chunking**: I utilized RecursiveCharacterTextSplitter for optimal text segmentation.
+-**8Intelligent Chunking**: I utilized RecursiveCharacterTextSplitter for optimal text segmentation.
 Advanced Embedding: I leveraged Hugging Face embeddings to create high-quality text representations.
 Efficient Retrieval: I employed FAISS to ensure fast and accurate information retrieval.
 Powerful Language Model: I integrated Llama-3-8B to generate human-like responses.
