@@ -1,8 +1,32 @@
-Brief:
-In this project , I used langchain and huggingface to make a rag based application for the provided MEDQA dataset the datatset consisted multiple textbooks,to go through .I combined all the dataset into 1 text file.
+# AI-Powered Document Analysis Chatbot
 
-LLms and tools used:
-I used Llama 3 8b as my llm to pass on the data recovered from vector database(Faiss) for creating word embeddings,I used open source all-MiniLM-L6-v2 model from huggingface.
+This project is a sophisticated AI-powered chatbot designed for intelligent document analysis and question answering. It combines a Flask backend with a JavaScript frontend to provide a seamless, interactive experience for users seeking information from uploaded documents.
 
-Interface:
-I used a html ,css and js with flask to create the interface this interface has been used in my previous projects so i made some changes to it to use it here.
+## Features
+
+-**Text File Analysis**: I processed and analyzed text files (like medical textbooks) using advanced NLP techniques.
+Intelligent Chunking: I utilized RecursiveCharacterTextSplitter for optimal text segmentation.
+Advanced Embedding: I leveraged Hugging Face embeddings to create high-quality text representations.
+Efficient Retrieval: I employed FAISS to ensure fast and accurate information retrieval.
+Powerful Language Model: I integrated Llama-3-8B to generate human-like responses.
+Interactive Web Interface: I provided a user-friendly chat interface for seamless interactions.
+Real-time Communication: I enabled smooth communication between the frontend and backend for efficient, real-time question answering.
+## Technologies Used
+### Backend
+- Flask
+- LangChain
+- Hugging Face
+- FAISS
+### Frontend
+- HTML5
+- JavaScript (ES6+)
+- CSS3
+## Project Structure
+
+- `app.py`: Flask application serving as the backend.
+- `medQA.py`: Core logic for document processing and question answering.
+- `static/script.js`: Frontend JavaScript for handling user interactions.
+- `templates/index.html`: HTML template for the chat interface.
+
+
+
